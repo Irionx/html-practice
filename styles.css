@@ -1,0 +1,25 @@
+*{
+    font-family: 'Roboto';
+}
+
+header nav ul li:hover{
+    color: rgb(89, 89, 179) !important;
+}
+
+.color-primary{
+    color: rgb(89, 89, 179);
+}
+.color-secondary{
+    color: rgb(247,103,59);
+}
+.background-primary{
+    background-color: rgb(89, 89, 179);
+}
+
+.vh-70{
+    height: 70vh;
+}
+
+.text-xl{
+    font-size: 60px;
+}
