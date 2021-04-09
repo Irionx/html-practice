@@ -23,3 +23,8 @@ header nav ul li:hover{
 .text-xl{
     font-size: 60px;
 }
+@media(max-width: 767px){
+    .border{
+        border: none !important;
+    }
+}
