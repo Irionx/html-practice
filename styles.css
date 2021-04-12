@@ -23,6 +23,26 @@ header nav ul li:hover{
 .text-xl{
     font-size: 60px;
 }
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #999
+}
+.menu-icon{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+}
+
+.menu-icon img{
+    width: 30px;
+}
 @media(max-width: 767px){
     .border{
         border: none !important;
