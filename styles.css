@@ -24,27 +24,67 @@ header nav ul li:hover{
     font-size: 60px;
 }
 header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: white;
+    background-color: rgba(255, 255, 255);
     width: 100%;
-    padding: 10px;
+    height: 40px;
     box-shadow: 2px 2px 5px #999
 }
-.menu-icon{
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
+.gradient {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.menu-icon {
+    position: absolute;
+    left: 10px;
+    display: none;
 }
 
 .menu-icon img{
     width: 30px;
 }
+.menu{
+    display: flex;
+}
 @media(max-width: 767px){
     .border{
         border: none !important;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        background-color: rgba(247, 245, 241, 0.856);
+        box-shadow: 2px 2px 5px #999;
+        padding: 10px;
+        border-radius: 10px;
+        /*display: none; */
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
     }
 }
