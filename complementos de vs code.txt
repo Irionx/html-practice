@@ -1,2 +1,0 @@
-live server: para visualizar los cambios del html en tiempo real, boton derecho en el html > view in live server (o algo asi)
-python: para python
