@@ -12,28 +12,22 @@ var redesSociales = ['Youtube', 'Twitter', 'Whatsapp', 'Instagram'];
 var saludoDeRedSocialYoutube = `${saludo} ${redesSociales[0]}`;
 var saludoDeRedSocialTwitter = `${saludo} ${redesSociales[1]}`
 
-console.log(saludoDeRedSocialYoutube);
-console.log(saludoDeRedSocialTwitter);
+//console.log(saludoDeRedSocialYoutube);
+//console.log(saludoDeRedSocialTwitter);
 var persona = {
     nombre: 'Sebastián Kozak',
     edad: 35,
     direccion: {
-        calle: 'Ferreyra',
-        numero: '1626',
+        calle: 'Avenida siempre viva',
+        numero: '9999',
         localidad: 'Pilar',
         Ciudad: 'Buenos Aires',
         Pais: 'Argentina'
     }
 }
-var Heladera = {
-    lacteos: ['Leche', 'Yogurt'],
-    Bebidas: ['Gaseosa','Agua', 'fernet', 'Cerveza'],
-    Carnes: 'pollo',
-    PersonaMuerta: {
-        nombre: "Juan",
-        edad: 30
-    }
-    }
 
-console.log(persona.direccion);
-console.log(Heladera);
+
+function imprimirPersonas(){
+    console.log(persona);
+}
+imprimirPersonas()
