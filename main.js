@@ -14,20 +14,49 @@ var saludoDeRedSocialTwitter = `${saludo} ${redesSociales[1]}`
 
 //console.log(saludoDeRedSocialYoutube);
 //console.log(saludoDeRedSocialTwitter);
-var persona = {
-    nombre: 'Sebastián Kozak',
-    edad: 35,
-    direccion: {
-        calle: 'Avenida siempre viva',
-        numero: '9999',
-        localidad: 'Pilar',
-        Ciudad: 'Buenos Aires',
-        Pais: 'Argentina'
-    }
-}
-
+var personas = [
+        {
+            nombre: 'Sebastián Kozak',
+            edad: 35,
+            direccion: {
+                calle: 'Avenida siempre viva',
+                numero: '9999',
+                localidad: 'Pilar',
+                Ciudad: 'Buenos Aires',
+                Pais: 'Argentina'
+            }
+        },
+        {
+            nombre: 'María Paz Soto',
+            edad: 25,
+            direccion: {
+                calle: 'Avenida siempre viva',
+                numero: '9999',
+                localidad: 'Pilar',
+                Ciudad: 'Buenos Aires',
+                Pais: 'Argentina'
+            }
+        }
+    ]
 
 function imprimirPersonas(){
-    console.log(persona);
+    console.log(personas);
 }
 imprimirPersonas()
+console.log("Gracias por pasar por la consola <3 pueden visitar mi perfil en https://www.linkedin.com/in/sebasti%C3%A1nk/");
+
+function imprimirPersona(posicion){
+    console.log(personas[posicion])
+}
+imprimirPersona(0);
+
+function imprimirAtributoDePersona(persona, atributo){
+    console.log(persona[atributo]);
+}
+imprimirAtributoDePersona(personas[1],'nombre')
+imprimirAtributoDePersona(personas[1],'edad')
+imprimirAtributoDePersona(personas[0],'nombre')
+imprimirAtributoDePersona(personas[0],'edad')
+
+
+
